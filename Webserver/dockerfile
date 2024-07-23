@@ -1,5 +1,5 @@
 From alpine:latest
-RUN yum -y install nginx; yum clean all; systemctl enable nginx
+RUN  apk update;apk add nginx
 EXPOSE 80
 CMD ["/usr/sbin/init"]
 
