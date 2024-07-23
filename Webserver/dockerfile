@@ -1,4 +1,4 @@
-From docker pull alpine:latest
+From alpine:latest
 RUN yum -y install nginx; yum clean all; systemctl enable nginx
 EXPOSE 80
 CMD ["/usr/sbin/init"]
