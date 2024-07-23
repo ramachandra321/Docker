@@ -4,5 +4,5 @@ RUN  rm -rf /usr/share/nginx/html/*
 copy WebStatic /usr/share/nginx/html
 copy roboshop.conf /etc/nginx/default.d/
 EXPOSE 80
-CMD ["/usr/sbin/init"]
+
 
