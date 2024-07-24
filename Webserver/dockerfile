@@ -1,5 +1,4 @@
-FROM local/c7-systemd
-RUN yum -y install nginx; yum clean all; systemctl enable nginx
+From nginx
 RUN  rm -rf /usr/share/nginx/html/*
 copy WebStatic /usr/share/nginx/html
 copy roboshop.config /etc/nginx/default.d/
