@@ -4,6 +4,7 @@ RUN  rm -rf /usr/share/nginx/html/*
 copy WebStatic /usr/share/nginx/html
 copy roboshop.config /etc/nginx/default.d/
 EXPOSE 80
+RUN systemctl start nginx
 CMD ["nginx", "-g", "daemon off;"]
 
 
