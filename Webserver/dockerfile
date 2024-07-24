@@ -2,7 +2,7 @@ From alpine:latest
 RUN  apk update;apk add nginx
 RUN  rm -rf /usr/share/nginx/html/*
 copy WebStatic /usr/share/nginx/html
-copy roboshop.conf /etc/nginx/default.d/
+copy roboshop.config /etc/nginx/default.d/
 EXPOSE 80
 
 
