@@ -1,10 +1,9 @@
 From alpine:latest
-RUN  apk update;apk add nginx
+RUN  apk update;apk add nginx;systemctl enable nginx
 RUN  rm -rf /usr/share/nginx/html/*
 copy WebStatic /usr/share/nginx/html
 copy roboshop.config /etc/nginx/default.d/
 EXPOSE 80
-RUN sudo systemctl start nginx
 CMD ["nginx", "-g", "daemon off;"]
 
 
