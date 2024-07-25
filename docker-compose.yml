@@ -1,7 +1,7 @@
 networks:
   default:
     external:
-    name: roboshop
+      name: roboshop
       
 
 services:
