@@ -45,7 +45,7 @@ services:
     - payment
 
   user:
-   image: user:1
+    image: user:1
     build:
       context: ./user
       dockerfile: dockerfile
